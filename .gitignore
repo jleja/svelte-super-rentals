@@ -3,3 +3,7 @@ node_modules
 /.svelte-kit
 /build
 /functions
+
+# Override homebrew global gitignore
+!*.cjs
+!**/src
