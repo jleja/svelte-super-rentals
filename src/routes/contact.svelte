@@ -1,5 +1,8 @@
-<div class="jumbo">
-  <div class="right svelte-logo"></div>
+<script>
+	import Jumbo from '../components/Jumbo.svelte';
+</script>
+
+<Jumbo>
   <h2>Contact Us</h2>
   <p>
     Super Rentals Representatives would love to help you<br>
@@ -15,4 +18,4 @@
     <a class="text-blue-600" href="mailto:john.leja@dockyard.com">superrentalsrep@sveltejs.com</a>
   </address>
   <a sveltekit:prefetch href="about" class="button">About Us</a>
-</div>
+</Jumbo>
