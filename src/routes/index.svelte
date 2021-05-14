@@ -1,5 +1,6 @@
 <script>
 	import Jumbo from '../components/Jumbo.svelte';
+  import Rental from '../components/Rental.svelte';
 </script>
 
 <Jumbo>
@@ -7,3 +8,11 @@
   <p>We hope you find exactly what you're looking for in a place to stay.</p>
   <a sveltekit:prefetch href="about" class="button">About Us</a>
 </Jumbo>
+
+<div class="rentals">
+  <ul class="results">
+    <li><Rental /></li>
+    <li><Rental /></li>
+    <li><Rental /></li>
+  </ul>
+</div>
