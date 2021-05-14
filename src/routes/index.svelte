@@ -1,2 +1,5 @@
-<h1 class=>Welcome to SvelteKit</h1>
-<p>Visit <a class="text-blue-600 underline" href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="jumbo">
+  <div class="right svelte-logo"></div>
+  <h2>Welcome to Super Rentals!</h2>
+  <p>We hope you find exactly what you're looking for in a place to stay.</p>
+</div>
