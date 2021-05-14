@@ -2,6 +2,14 @@
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
+
+## Mapbox
+This project uses Mapbox and requires you to use a public access token.  
+- Sign up on mapbox.com for an account
+- Create an API key
+- In the root of this project, add a file called `.env`
+- Add `VITE_MAPBOX_ACCESS_TOKEN="<<YOUR API KEY HERE>>"` and save the file, replacing the `<<....>>` contents with your API key
+
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!
