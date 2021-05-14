@@ -1,6 +1,21 @@
+<script context="module">
+  export async function load({ fetch }) {
+    const res = await fetch('/api');
+
+    if (res.ok) return { props: { rentals: await res.json() } };
+
+    return {
+      status: res.status,
+      error: new Error()
+    };
+  }
+</script>
+
 <script>
 	import Jumbo from '../components/Jumbo.svelte';
   import Rental from '../components/Rental.svelte';
+
+  export let rentals;
 </script>
 
 <Jumbo>
@@ -11,8 +26,8 @@
 
 <div class="rentals">
   <ul class="results">
-    <li><Rental /></li>
-    <li><Rental /></li>
-    <li><Rental /></li>
+    {#each rentals.data as rental}
+      <li><Rental {...rental.attributes}/></li>
+    {/each}
   </ul>
 </div>
