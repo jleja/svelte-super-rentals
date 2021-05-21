@@ -1,5 +1,5 @@
 <nav class="menu">
-  <a sveltekit:prefetch href="." class="menu-index">
+  <a sveltekit:prefetch href="/" class="menu-index">
     <h1>SuperRentals</h1>
   </a>
   <div class="links">

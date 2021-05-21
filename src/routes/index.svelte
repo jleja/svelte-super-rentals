@@ -1,8 +1,14 @@
 <script context="module">
   export async function load({ fetch }) {
-    const res = await fetch('/api');
+    const res = await fetch('/api/rentals.json');
+    const { data } = await res.json();
+    const rentals = data.map((rental) => {
+      const { id, type } = rental;
 
-    if (res.ok) return { props: { rentals: await res.json() } };
+      return { id, type, ...rental.attributes};
+    });
+
+    if (res.ok) return { props: { rentals } };
 
     return {
       status: res.status,
@@ -26,8 +32,8 @@
 
 <div class="rentals">
   <ul class="results">
-    {#each rentals.data as rental}
-      <li><Rental {...rental.attributes}/></li>
+    {#each rentals as rental}
+      <li><Rental rental={rental} /></li>
     {/each}
   </ul>
 </div>
