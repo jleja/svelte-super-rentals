@@ -21,6 +21,7 @@
   <img
     alt={alt}
     src={mapSrc()}
-    width={width} height={height}
+    width={width}
+    height={height}
   >
 </div>

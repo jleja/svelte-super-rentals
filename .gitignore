@@ -7,3 +7,4 @@ node_modules
 # Override homebrew global gitignore
 !*.cjs
 !**/src
+!**/static
