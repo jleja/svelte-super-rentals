@@ -4,7 +4,7 @@ Following along with Ember's Super Rentals tutorial, but using Svelte.  (I KNOW!
 
 https://youthful-easley-e68829.netlify.app/
 
-![Screen Shot 2021-05-14 at 5 15 35 PM](https://user-images.githubusercontent.com/1759897/118332760-9b843300-b4d8-11eb-8bfb-9b91d2234441.png)
+![Screen Shot of Svelte Super Rentals app](https://user-images.githubusercontent.com/1759897/120029154-b4561380-bfc3-11eb-90fc-595543fd25f4.png)
 
 
 ## Mapbox
