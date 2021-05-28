@@ -2,14 +2,14 @@
   export let src;
   export let alt;
 
-  let isLarge = false;
+  let large = false;
 
   function toggleSize() {
-		isLarge = !isLarge;
-	}
+    large = !large;
+  }
 </script>
 
-<button type="button" class="image {isLarge ? "large" : ""}" on:click={toggleSize}>
+<button type="button" class="image" class:large on:click={toggleSize}>
   <img src={src} alt={alt}>
-  <small>View {isLarge ? "Smaller" : "Larger"}</small>
+  <small>View {large ? "Smaller" : "Larger"}</small>
 </button>
