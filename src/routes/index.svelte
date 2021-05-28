@@ -19,7 +19,7 @@
 
 <script>
 	import Jumbo from '../components/Jumbo.svelte';
-  import Rental from '../components/Rental.svelte';
+  import Rentals from '../components/Rentals.svelte';
 
   export let rentals;
 </script>
@@ -30,10 +30,4 @@
   <a sveltekit:prefetch href="about" class="button">About Us</a>
 </Jumbo>
 
-<div class="rentals">
-  <ul class="results">
-    {#each rentals as rental}
-      <li><Rental rental={rental} /></li>
-    {/each}
-  </ul>
-</div>
+<Rentals rentals={rentals} />
