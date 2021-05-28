@@ -15,7 +15,7 @@
 
   <ul class="results">
     {#each filteredRentals as rental}
-      <li><Rental rental={rental} /></li>
+      <li><Rental {rental} /></li>
     {/each}
   </ul>
 </div>
