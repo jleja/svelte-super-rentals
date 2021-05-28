@@ -26,9 +26,9 @@
   <h2>{rental.title}</h2>
   <p>Nice find! This looks like a nice place to stay near {rental.city}.</p>
   <ShareButton
-    text={`Check out ${rental.title} on Super Rentals!`}
-    hashtags={'vacation,travel,authentic,blessed,superrentals'}
-    via={'sveltejs'}
+    text="Check out {rental.title} on Super Rentals!"
+    hashtags="vacation,travel,authentic,blessed,superrentals"
+    via="sveltejs"
   >
     Share on Twitter
   </ShareButton>
