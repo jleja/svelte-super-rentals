@@ -1,5 +1,5 @@
 <script>
-  import Contact from './Contact.svelte';
+  import Contact from './contact.svelte';
 </script>
 
 <Contact />
