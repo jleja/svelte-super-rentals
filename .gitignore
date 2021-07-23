@@ -10,3 +10,4 @@ node_modules
 !**/static
 !.nvmrc
 !*.toml
+!prisma
