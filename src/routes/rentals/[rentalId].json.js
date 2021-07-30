@@ -1,6 +1,4 @@
-import { PrismaClient } from '@prisma/client';
-
-const prisma = new PrismaClient();
+import prisma from '$lib/db'
 
 export async function get({ params }) {
 	const rental = await prisma.rental.findUnique({
