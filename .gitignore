@@ -11,3 +11,5 @@ node_modules
 !.nvmrc
 !*.toml
 !prisma
+# Local Netlify folder
+.netlify
