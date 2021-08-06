@@ -11,22 +11,23 @@
   "dependencies": {
     "@prisma/client": "2.29.0-dev.7",
     "encoding": "^0.1.13",
+    "netlify-cli": "^6.0.8",
     "normalize-url": ">=4.5.1"
   },
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "^1.0.0-next.25",
-    "@sveltejs/kit": "^1.0.0-next.139",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.27",
+    "@sveltejs/kit": "^1.0.0-next.142",
     "autoprefixer": "^10.3.1",
     "cssnano": "^5.0.7",
-    "eslint": "^7.31.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-svelte3": "^3.2.0",
     "postcss": "^8.3.6",
     "postcss-load-config": "^3.1.0",
     "prettier": "~2.3.2",
     "prettier-plugin-svelte": "^2.3.1",
-    "prisma": "2.29.0-dev.7",
-    "svelte": "^3.41.0",
+    "prisma": "2.29.0-dev.37",
+    "svelte": "^3.42.1",
     "svelte-preprocess": "^4.7.4",
     "tailwindcss": "^2.2.7"
   },
