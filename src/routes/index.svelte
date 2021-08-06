@@ -1,12 +1,8 @@
 <script context="module">
   export async function load({ fetch }) {
-    const res = await fetch('/api/rentals.json');
-    const { data } = await res.json();
-    const rentals = data.map((rental) => {
-      const { id, type } = rental;
-
-      return { id, type, ...rental.attributes};
-    });
+    const res = await fetch('/rentals');
+    const data = await res.json();
+    const { rentals } = data;
 
     if (res.ok) return { props: { rentals } };
 

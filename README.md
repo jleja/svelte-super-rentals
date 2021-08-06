@@ -2,7 +2,7 @@
 
 Following along with Ember's Super Rentals tutorial, but using Svelte.  (I KNOW!!!)
 
-https://youthful-easley-e68829.netlify.app/
+https://svelte-super-rentals.herokuapp.com/
 
 ![Screen Shot of Svelte Super Rentals app](https://user-images.githubusercontent.com/1759897/120029154-b4561380-bfc3-11eb-90fc-595543fd25f4.png)
 
@@ -13,6 +13,7 @@ This project uses Mapbox and requires you to use a public access token.
 - Create an API key
 - In the root of this project, add a file called `.env`
 - Add `VITE_MAPBOX_ACCESS_TOKEN="<<YOUR API KEY HERE>>"` and save the file, replacing the `<<....>>` contents with your API key
+- Add `DATABASE_URL="<<HEROKU ACCESS CREDS HERE>>"` and save to thye file as well, replacing hte `<<....>>` with the login credentials from Heroku.
 
 ## Developing
 
@@ -34,3 +35,6 @@ npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+## Running
+Until the Prisma client can export an ES module in the build, you'll need to manually modify the imports in `/lib/db.js`.

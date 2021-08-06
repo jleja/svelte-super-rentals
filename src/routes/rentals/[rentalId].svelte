@@ -1,9 +1,8 @@
 <script context="module">
   export async function load({ page, fetch }) {
-    const res = await fetch(`/api/rentals/${page.params.rentalId}.json`);
-    const { data } = await res.json();
-    const { id, type } = data;
-    const rental = { id, type, ...data.attributes };
+    const res = await fetch(`/rentals/${page.params.rentalId}.json`);
+    const data = await res.json();
+    const { rental } = data;
 
     if (res.ok) return { props: { rental } };
 

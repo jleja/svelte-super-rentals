@@ -10,3 +10,8 @@ node_modules
 !**/static
 !.nvmrc
 !*.toml
+!prisma
+!*.json
+!Procfile
+# Local Netlify folder
+.netlify
