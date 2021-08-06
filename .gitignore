@@ -12,5 +12,6 @@ node_modules
 !*.toml
 !prisma
 !*.json
+!Procfile
 # Local Netlify folder
 .netlify
